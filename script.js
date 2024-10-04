@@ -27,9 +27,12 @@ const waterSigns = [scorpio, pisces];
 */
 
 
+
+
+
 // ✒️ Write your code here
 fireSigns.push("♐");
-earthSigns.pop("♐");
+
 
 console.log(
   fireSigns[fireSigns.length - 1] === "♐"
@@ -44,3 +47,41 @@ console.log(
 */
 
 
+// ✒️ Write your code here
+earthSigns.pop("♐");
+
+console.log(
+    fireSigns[fireSigns.length - 1] === "♐"
+      ? "Good Answer ✅"
+      : "Wrong Answer ❌"
+  );
+
+
+
+/* 🏁 Remove one element at the begining of an array
+      Pisces should not be on air Signs, please remove Pisces 
+      from the array, and verify the result.
+*/
+
+
+
+// ✒️ Write your code here
+airSigns.shift(`♓︎`);
+
+
+// the line below is for testing, don't touch it :)
+console.log(airSigns[0] !== "♓︎" ? "Good Answer ✅" : "Wrong Answer ❌");
+
+/*  🏁 Add one element at the beginning of an array
+    Cancer is missing from water signs please add it at the 
+    BEGINNING of the array and verify the result.
+*/
+
+
+
+// ✒️ Write your code here
+waterSigns.unshift(`♋`);
+
+
+// the line below is for testing, don't touch it :)
+console.log(waterSigns[0] === "♋" ? "Good Answer ✅" : "Wrong Answer ❌");
